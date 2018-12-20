@@ -1,0 +1,34 @@
+.header-jumbo {
+	padding-top: 128px;
+	border-radius: 0px;
+}
+
+.card-deck {
+	margin-bottom: 32px;
+}
+
+#particles-js {
+	width: 100%;
+	height: 100%;
+}
+
+.particles-js-canvas-el {
+	position: absolute;
+	margin-top: -32px;
+}
+
+.inner-tilt {
+	position: absolute;
+    top: 43%;
+    bottom: 50%;
+    right: 42%;
+}
+
+.img-tilt {
+	box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item.active {
+	background-color: #fff;
+	color: #007bff;
+}
