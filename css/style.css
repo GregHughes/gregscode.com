@@ -11,6 +11,30 @@ nav {
 	text-align: center;
 }
 
+.summary {
+	padding: 4% 10%;
+}
+
+.projects {
+	background-color: #f5f5f5;
+	padding: 6% 10%;
+}
+
+.skills {
+	background-color: #dfdfdf;
+	padding: 6% 10%;
+}
+
+.contact {
+padding: 6% 10%;
+}
+
+.main-footer {
+	background-color: #000;
+	color: #fff;
+	padding: 6% 10%;
+}
+
 #particles-js {
 	width: 100%;
 	height: 100%;
@@ -26,6 +50,14 @@ nav {
 	color: #007bff;
 }
 
+body {
+	font-family: 'Nunito', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
 #typed-content {
 	/* font-family: 'Baloo Chettan', cursive;
 font-family: 'Bungee Hairline', cursive;
@@ -35,12 +67,12 @@ font-family: 'Source Sans Pro', sans-serif;
 /* font-family: 'Noto Sans', sans-serif; */
 /* font-family: 'Nunito', sans-serif; */
 /* font-family: 'Source Code Pro', monospace; */
-	font-size: 6em;
+	font-size: 6rem;
 	color: white;
 }
 
 .typed-cursor {
-	font-size: 6em;
+	font-size: 6rem;
 	color: white;
 }
 
@@ -63,4 +95,67 @@ font-family: 'Source Sans Pro', sans-serif;
 .main-header {
     min-height: 500px;
     padding-top: 35vh;
+}
+
+.code-grid {
+	/* position: absolute;
+	top: 100px; */
+	/* left: 0;
+	width: 1060px; */
+	-webkit-transform: rotateX(60deg) rotateZ(-50deg);
+	transform: rotateX(60deg) rotateZ(-50deg);
+	/*Preserve 3D style for children*/
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.code-grid div {
+	height: 402px;
+	width: 524px;
+	/*Preserve 3D style for children(pseudo elements)*/
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+/*Left and Bottom Sides*/
+.code-grid div:before, .code-grid div:after {
+	content: '';
+	position: absolute;
+	/*100% height and width*/
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: inherit;
+	background-size: cover;
+}
+/*Left Side*/
+.code-grid div:before {
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+	-webkit-transform: rotateY(90deg);
+	transform: rotateY(90deg);
+	/*Reducing the width of the left side for a flat feel*/
+	width: 5px;
+}
+/*Bottom Side*/
+.code-grid div:after {
+	-webkit-transform-origin: bottom center;
+	transform-origin: bottom center;
+	-webkit-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	/*Reducing the height*/
+	height: 5px; top: auto; bottom: 0;
+	/*Background fix - start the background from the bottom*/
+	background-position: bottom center;
+}
+/*Shadow time - sadly all pseudo elements are used so we will have to add an HTML element in each LI*/
+.s {
+	position: absolute;
+	/*30px smaller from each side*/
+	top: 30px; left: 30px; right: 30px; bottom: 30px;
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.5);
+	/*Pushing down the shadow to give an elevated feel*/
+	-webkit-transform: translateZ(-50px);
+	transform: translateZ(-50px);
+}
+
+#code-screen {
+	background: url(../images/tester.png);
 }

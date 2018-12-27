@@ -5,5 +5,4 @@ var typed = new Typed('#typed-content', {
     backDelay: 1000,
     typeSpeed: 25,
     backSpeed: 20
-    // onComplete: function(self) { prettyLog('onCmplete ' + self) }
   });
