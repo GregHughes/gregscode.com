@@ -1,10 +1,14 @@
-.header-jumbo {
-	padding-top: 128px;
-	border-radius: 0px;
+nav {
+	background-color: rgba(21,31,33,0.5);
 }
 
-.card-deck {
-	margin-bottom: 32px;
+.main-header {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/rocket-bg.jpg) center center no-repeat;
+	background-size: cover;
+	height: 100vh;
+	min-height: 300px;
+	padding: 35vh 1em 0;
+	text-align: center;
 }
 
 #particles-js {
@@ -17,18 +21,46 @@
 	margin-top: -32px;
 }
 
-.inner-tilt {
-	position: absolute;
-    top: 43%;
-    bottom: 50%;
-    right: 42%;
-}
-
-.img-tilt {
-	box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
-}
-
 .dropdown-item.active {
 	background-color: #fff;
 	color: #007bff;
+}
+
+#typed-content {
+	/* font-family: 'Baloo Chettan', cursive;
+font-family: 'Bungee Hairline', cursive;
+font-family: 'Dhurjati', sans-serif; */
+font-family: 'Source Sans Pro', sans-serif;
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Noto Sans', sans-serif; */
+/* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Source Code Pro', monospace; */
+	font-size: 6em;
+	color: white;
+}
+
+.typed-cursor {
+	font-size: 6em;
+	color: white;
+}
+
+@media (min-width: 1200px)
+.container {
+    max-width: 1250px;
+}
+
+@media only screen and (min-width: 1000px)
+.main-header-container {
+    max-width: 1040px;
+}
+
+@media only screen and (min-width: 750px)
+.main-header {
+    padding: 19rem 2em 0;
+}
+
+@media only screen and (orientation: landscape)
+.main-header {
+    min-height: 500px;
+    padding-top: 35vh;
 }
