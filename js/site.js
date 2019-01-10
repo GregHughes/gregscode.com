@@ -12,5 +12,5 @@ var typed = new Typed('#typed-content', {
   });
 
   // Particles.js
-  particlesJS.load('particles-js', 'particles.json', function() {
+  particlesJS.load('particles-js', 'js/particles.json', function() {
   console.log("particles.js config loaded - Greg sure is great..."); });
