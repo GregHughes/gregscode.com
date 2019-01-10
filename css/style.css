@@ -113,6 +113,17 @@ nav {
 padding: 4%;
 }
 
+.social-container i {
+    border: 2px solid #000;
+    border-radius: 30%;
+    font-size: 1.6rem;
+    height: 3.75rem;
+    margin: .35rem;
+    padding-top: .9375rem;
+    transition: background-color .5s, color .5s ease-in-out;
+    width: 3.75rem;
+}
+
 /* Main Footer CSS */
 .main-footer {
 	background-color: #000;
@@ -130,13 +141,8 @@ padding: 4%;
 
 .particles-js-canvas-el {
 	position: absolute;
-	margin-top: -32px;
+	margin: -4%;
 }
-
-/* .dropdown-item.active {
-	background-color: #fff;
-	color: #007bff;
-} */
 
 /* Typed.js CSS */
 #typed-content {
