@@ -9,8 +9,9 @@ var typed = new Typed('#typed-content', {
     backDelay: 1000,
     typeSpeed: 25,
     backSpeed: 20
-  });
+});
 
-  // Particles.js
-  particlesJS.load('particles-js', 'js/particles.json', function() {
-  console.log("particles.js config loaded - Greg sure is great..."); });
+// Particles.js
+particlesJS.load('particles-js', 'js/particles.json', function() {
+    console.log("particles.js config loaded - If you can see this you're awesome!");
+});
