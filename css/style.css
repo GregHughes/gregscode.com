@@ -1,7 +1,6 @@
 /* Main CSS */
 body {
 	font-family: 'Nunito', sans-serif;
-	overflow-x: hidden;
 }
 
 h1,
@@ -27,6 +26,10 @@ p {
 
 button {
 	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	overflow-x: hidden;
 }
 
 /* Links CSS */
@@ -91,22 +94,30 @@ nav {
 	padding: 4%;
 }
 
+.project {
+	margin-bottom: 4vh;
+}
+
 /* Skills CSS */
 .skills {
 	background-color: #dfdfdf;
-	padding: 6% 10%;
+	padding: 4%;
+}
+
+.skill {
+	padding: 100px;
 }
 
 /* Contact CSS */
 .contact {
-padding: 6% 10%;
+padding: 4%;
 }
 
 /* Main Footer CSS */
 .main-footer {
 	background-color: #000;
 	color: #fff;
-	padding: 6% 10%;
+	padding: 4%;
 }
 
 /* Animations CSS */
@@ -122,10 +133,10 @@ padding: 6% 10%;
 	margin-top: -32px;
 }
 
-.dropdown-item.active {
+/* .dropdown-item.active {
 	background-color: #fff;
 	color: #007bff;
-}
+} */
 
 /* Typed.js CSS */
 #typed-content {
@@ -141,7 +152,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 /* 3D Mockup CSS */
 #code-screen {
-	background: url(../images/tester.png);
+	background: url(../images/code.png);
 }
 
 .code-grid {

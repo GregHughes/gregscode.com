@@ -10,3 +10,7 @@ var typed = new Typed('#typed-content', {
     typeSpeed: 25,
     backSpeed: 20
   });
+
+  // Particles.js
+  particlesJS.load('particles-js', 'particles.json', function() {
+  console.log("particles.js config loaded - Greg sure is great..."); });
