@@ -48,6 +48,16 @@ nav {
     z-index: 10000;
 }
 
+navbar-nav {
+    /* Fix flicker on scroll */
+    -webkit-backface-visibility: hidden;
+}
+
+#resume-download-button {
+    display: inline-block;
+    margin-left: 8px;
+}
+
 /* Header CSS */
 
 .main-header {
