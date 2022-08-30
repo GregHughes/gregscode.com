@@ -10,5 +10,3 @@ var typed = new Typed('#typed-content', {
     typeSpeed: 25,
     backSpeed: 20
 });
-
-console.log('testing');
