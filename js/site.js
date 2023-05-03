@@ -1,8 +1,8 @@
 // Smooth Scroll
-var scroll = new SmoothScroll('a[href*="#"]');
+let scroll = new SmoothScroll('a[href*="#"]');
 
 // Typed.js
-var typed = new Typed("#typed-content", {
+let typed = new Typed("#typed-content", {
   strings: [
     "Let's do our best work...^200",
     "Let's do our best work together.",
@@ -13,3 +13,8 @@ var typed = new Typed("#typed-content", {
   typeSpeed: 23,
   backSpeed: 18,
 });
+
+// dynamic copyright date
+let cr = document.getElementById("copyright");
+let date = new Date().getFullYear();
+cr.innerText = `\u00A9 2019-${date} Greg Hughes`;

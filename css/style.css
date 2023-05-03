@@ -1,4 +1,4 @@
-/* Main CSS */
+/* Custom CSS */
 
 body {
     font-family: 'Nunito', sans-serif;
@@ -51,6 +51,7 @@ nav {
 navbar-nav {
     /* Fix flicker on scroll */
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 #resume-download-button {
@@ -322,12 +323,15 @@ navbar-nav {
     #typed-content {
         font-size: 1.45rem;
     }
+
     .typed-cursor {
         font-size: 1.45rem;
     }
+
     .main-header-content h2 {
         font-size: 0.5em;
     }
+
     .main-header-content p {
         font-size: 0.3em;
     }
@@ -337,12 +341,15 @@ navbar-nav {
     #typed-content {
         font-size: 2.1rem;
     }
+
     .typed-cursor {
         font-size: 2.1rem;
     }
+
     .main-header-content h2 {
         font-size: 0.7em;
     }
+
     .main-header-content p {
         font-size: 0.45em;
     }
@@ -352,12 +359,15 @@ navbar-nav {
     #typed-content {
         font-size: 3.3rem;
     }
+
     .typed-cursor {
         font-size: 3.3rem;
     }
+
     .main-header-content h2 {
         font-size: 0.9em;
     }
+
     .main-header-content p {
         font-size: 1rem;
     }
@@ -367,12 +377,15 @@ navbar-nav {
     #typed-content {
         font-size: 4.2rem;
     }
+
     .typed-cursor {
         font-size: 4.2rem;
     }
+
     .main-header-content h2 {
         font-size: 1em;
     }
+
     .main-header-content p {
         font-size: 1.2rem;
     }
