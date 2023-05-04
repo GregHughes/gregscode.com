@@ -62,7 +62,7 @@ navbar-nav {
 /* Header CSS */
 
 .main-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/rocket-bg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../public/images/rocket-bg.jpg) center center no-repeat;
     background-size: cover;
     height: 100vh;
     min-height: 300px;
@@ -205,6 +205,7 @@ navbar-nav {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 5.7rem;
     color: white;
+    white-space: pre;
 }
 
 .typed-cursor {
@@ -215,7 +216,7 @@ navbar-nav {
 /* 3D Mockup CSS */
 
 #code-screen {
-    background: url(../images/code.png);
+    background: url(../public/images/code.png);
 }
 
 .code-grid {
