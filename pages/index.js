@@ -1,168 +1,105 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <title>Greg Hughes - Developer Portfolio</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Nunito|Source+Sans+Pro:600"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
+import Head from "next/head";
+import Header from "@/components/header";
 
-  <body>
-    <div class="wrapper">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <a class="navbar-brand" href="https://www.gregscode.com">Greg's Code</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#hello"
-                >Hello <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resources/greg_hughes.pdf" download=""
-                >Resume<i
-                  class="fas fa-download"
-                  id="resume-download-button"
-                ></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <header class="main-header">
-        <div class="container">
-          <div class="main-header-title">
-            <span id="typed-content" style="white-space: pre"></span>
-          </div>
-          <div class="main-header-content">
-            <h2>Greg Hughes - Full Stack Engineer</h2>
-            <p>Lover of all things JavaScript, and React &#128640;</p>
-          </div>
-          <a href="#hello"><i class="fas fa-chevron-down fa-3x swing"></i></a>
-        </div>
-      </header>
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Greg Hughes - Developer Portfolio</title>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no"
+        />
+      </Head>
+      <Header />
       <main role="main" id="hello">
-        <section class="summary">
-          <div class="container">
-            <div class="row justify-content-between">
-              <div class="col-sm-12">
-                <div class="code-grid">
+        <section className="summary">
+          <div className="container">
+            <div className="row justify-content-between">
+              <div className="col-sm-12">
+                <div className="code-grid">
                   <div id="code-screen">
-                    <span class="s"></span>
+                    <span className="s"></span>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 summary-info">
-              <h1>Hello, World!</h1>
-              <hr />
-              <p>
-                My name is Greg Hughes and I am full stack web developer. I am
-                passionate about solving real world problems with fast and
-                intuitive web applications as a solution. What keeps me driven
-                is my natural curiosity to learn as much as I can, and put my
-                skills to the test in order to achieve the best results
-                possible. I strive to become a better web developer every day
-                that I can by keeping up with best practices and following new modern architectures and
-                paradigms.
-              </p>
-              <p>
-                Want to work together? I'm always open to starting new projects,
-                collaborating or just talking code!
-              </p>
+              <div className="col-sm-12 summary-info">
+                <h1>Hello, World!</h1>
+                <hr />
+                <p>
+                  My name is Greg Hughes and I am full stack web developer. I am
+                  passionate about solving real world problems with fast and
+                  intuitive web applications as a solution. What keeps me driven
+                  is my natural curiosity to learn as much as I can, and put my
+                  skills to the test in order to achieve the best results
+                  possible. I strive to become a better web developer every day
+                  that I can by keeping up with best practices and following new
+                  modern architectures and paradigms.
+                </p>
+                <p>
+                  Want to work together? I'm always open to starting new
+                  projects, collaborating or just talking code!
+                </p>
+              </div>
             </div>
           </div>
         </section>
-        <section class="projects" id="projects">
-          <div class="container">
-            <div class="row text-center">
-              <div class="col-sm-12">
+        <section className="projects" id="projects">
+          <div className="container">
+            <div className="row text-center">
+              <div className="col-sm-12">
                 <h1>Projects</h1>
-                <p>Below you will find some of the websites and applications that I've either built entirely or contributed to in the past.</p>
+                <p>
+                  Below you will find some of the websites and applications that
+                  I've either built entirely or contributed to in the past.
+                </p>
                 <hr />
               </div>
-              <div class="project col-sm-6 col-md-3">
+              <div className="project col-sm-6 col-md-3">
                 <a href="https://www.petalumamuseum.com/" target="_blank">
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src="images/phlm.png"
                     alt="Petaluma Historical Library & Museum"
                   />
                   <h4>Petaluma Historical Library & Museum</h4>
                 </a>
               </div>
-              <div class="project col-sm-6 col-md-3">
+              <div className="project col-sm-6 col-md-3">
                 <a
                   href="https://gregscode.com/worras-tale/game.html"
                   target="_blank"
                 >
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src="images/worra.png"
                     alt="Worra's Tale"
                   />
                   <h4>Worra's Tale</h4>
                 </a>
               </div>
-              <div class="project col-sm-6 col-md-3">
+              <div className="project col-sm-6 col-md-3">
                 <a
                   href="https://gregscode.com/googlemaps-api/app.html"
                   target="_blank"
                 >
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src="images/googlemaps.png"
                     alt="Google Maps API"
                   />
                   <h4>Google Maps API</h4>
                 </a>
               </div>
-              <div class="project col-sm-6 col-md-3">
+              <div className="project col-sm-6 col-md-3">
                 <a
                   href="https://gregscode.com/data-visualization/app.html"
                   target="_blank"
                 >
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src="images/d3.png"
                     alt="D3 SVG Data Visualization"
                   />
@@ -172,10 +109,10 @@
             </div>
           </div>
         </section>
-        <section class="skills" id="skills">
-          <div class="container">
-            <div class="row text-center">
-              <div class="col-sm-12">
+        <section className="skills" id="skills">
+          <div className="container">
+            <div className="row text-center">
+              <div className="col-sm-12">
                 <h1>Skills</h1>
                 <hr />
                 <p>
@@ -183,7 +120,7 @@
                   building projects with.
                 </p>
               </div>
-              <div class="skill col-md-6 col-lg-4">
+              <div className="skill col-md-6 col-lg-4">
                 <svg viewBox="0 0 128 128">
                   <path
                     fill="#383838"
@@ -193,7 +130,7 @@
                 <h4>HTML 5</h4>
                 <hr />
               </div>
-              <div class="skill col-md-6 col-lg-4">
+              <div className="skill col-md-6 col-lg-4">
                 <svg viewBox="0 0 128 128">
                   <path
                     fill="#383838"
@@ -203,11 +140,11 @@
                 <h4>CSS 3</h4>
                 <hr />
               </div>
-              <div class="skill col-md-6 col-lg-4">
+              <div className="skill col-md-6 col-lg-4">
                 <svg viewBox="0 0 128 128">
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="#383838"
                     d="M1.219 56.156c0 .703.207 1.167.323 1.618.756 2.933 2.381 5.45 4.309 7.746 2.746 3.272 6.109 5.906 9.554 8.383 2.988 2.148 6.037 4.248 9.037 6.38.515.366 1.002.787 1.561 1.236-.481.26-.881.489-1.297.7-3.959 2.008-7.768 4.259-11.279 6.986-2.116 1.644-4.162 3.391-5.607 5.674-2.325 3.672-3.148 7.584-1.415 11.761.506 1.22 1.278 2.274 2.367 3.053.353.252.749.502 1.162.6 1.058.249 2.136.412 3.207.609l3.033-.002c3.354-.299 6.407-1.448 9.166-3.352 4.312-2.976 7.217-6.966 8.466-12.087.908-3.722.945-7.448-.125-11.153-.099-.344-.224-.681-.354-1.014-.13-.333-.283-.657-.463-1.072l6.876-3.954.103.088c-.125.409-.258.817-.371 1.23-.817 2.984-1.36 6.02-1.165 9.117.208 3.3 1.129 6.389 3.061 9.146 1.562 2.23 5.284 2.313 6.944.075.589-.795 1.16-1.626 1.589-2.513 1.121-2.315 2.159-4.671 3.23-7.011l.187-.428c-.077 1.108-.167 2.081-.208 3.055-.064 1.521.025 3.033.545 4.48.445 1.238 1.202 2.163 2.62 2.326.97.111 1.743-.333 2.456-.896 1.114-.879 2.019-1.965 2.691-3.199 1.901-3.491 3.853-6.961 5.576-10.54 1.864-3.871 3.494-7.855 5.225-11.792l.286-.698c.409 1.607.694 3.181 1.219 4.671.61 1.729 1.365 3.417 2.187 5.058.389.775.344 1.278-.195 1.928-2.256 2.72-4.473 5.473-6.692 8.223-.491.607-.98 1.225-1.389 1.888-.247.403-.411.894-.48 1.364-.133.898.422 1.764 1.383 1.971.878.189 1.813.259 2.708.193 3.097-.228 5.909-1.315 8.395-3.157 3.221-2.386 4.255-5.642 3.475-9.501-.211-1.047-.584-2.065-.947-3.074-.163-.455-.174-.774.123-1.198 2.575-3.677 4.775-7.578 6.821-11.569.081-.157.164-.314.306-.482.663 3.45 1.661 6.775 3.449 9.792-.912.879-1.815 1.676-2.632 2.554-1.799 1.934-3.359 4.034-4.173 6.595-.35 1.104-.619 2.226-.463 3.405.242 1.831 1.742 3.021 3.543 2.604 3.854-.892 7.181-2.708 9.612-5.925 1.636-2.166 1.785-4.582 1.1-7.113-.188-.688-.411-1.365-.651-2.154.951-.295 1.878-.649 2.837-.868 4.979-1.136 9.904-.938 14.702.86 2.801 1.05 5.064 2.807 6.406 5.571 1.639 3.379.733 6.585-2.452 8.721-.297.199-.637.356-.883.605-.151.153-.242.459-.205.67.021.123.346.277.533.275 1.047-.008 1.896-.557 2.711-1.121 2.042-1.413 3.532-3.314 3.853-5.817l.063-.188-.077-1.63c-.031-.094.023-.187.016-.258-.434-3.645-2.381-6.472-5.213-8.688-3.28-2.565-7.153-3.621-11.249-3.788-3.338-.136-6.619.36-9.765 1.503-.897.325-1.786.71-2.688 1.073-.121-.219-.251-.429-.358-.646-.926-1.896-2.048-3.708-2.296-5.882-.176-1.544-.392-3.086-.025-4.613.353-1.469.813-2.913 1.246-4.362.223-.746.066-1.164-.646-1.5-.248-.117-.518-.219-.786-.258-1.75-.254-3.476-.109-5.171.384-.6.175-1.036.511-1.169 1.175-.076.381-.231.746-.339 1.122-.443 1.563-.757 3.156-1.473 4.645-1.794 3.735-3.842 7.329-5.938 10.897-.227.385-.466.763-.752 1.23-.736-1.54-1.521-2.922-1.759-4.542-.269-1.832-.481-3.661-.025-5.479.339-1.356.782-2.687 1.19-4.025.193-.636.104-.97-.472-1.305-.291-.169-.62-.319-.948-.368-1.815-.269-3.603-.128-5.354.438-.543.176-.828.527-.994 1.087-.488 1.652-.904 3.344-1.589 4.915-2.774 6.36-5.628 12.687-8.479 19.013-.595 1.321-1.292 2.596-1.963 3.882-.17.326-.418.613-.63.919-.17-.201-.236-.339-.235-.477.005-.813-.092-1.65.063-2.436.469-2.378 1.009-4.743 1.578-7.099.47-1.946 1.017-3.874 1.538-5.807.175-.647.178-1.252-.287-1.796-.781-.911-2.413-1.111-3.381-.409l-.428.242.083-.69c.204-1.479.245-2.953-.161-4.41-.506-1.816-1.802-2.861-3.686-2.803-.878.027-1.8.177-2.613.497-3.419 1.34-6.048 3.713-8.286 6.568-.203.259-.471.495-.757.654-2.893 1.604-5.795 3.188-8.696 4.778l-3.229 1.769c-.866-.826-1.653-1.683-2.546-2.41-2.727-2.224-5.498-4.393-8.244-6.592-2.434-1.949-4.792-3.979-6.596-6.56-1.342-1.92-2.207-4.021-2.29-6.395-.105-3.025.753-5.789 2.293-8.362 1.97-3.292 4.657-5.934 7.611-8.327 3.125-2.53 6.505-4.678 10.008-6.639 4.901-2.743 9.942-5.171 15.347-6.774 5.542-1.644 11.165-2.585 16.965-1.929 2.28.258 4.494.78 6.527 1.895 1.557.853 2.834 1.97 3.428 3.716.586 1.718.568 3.459.162 5.204-.825 3.534-2.76 6.447-5.195 9.05-3.994 4.267-8.866 7.172-14.351 9.091-3.165 1.107-6.421 1.802-9.765 2.083-2.729.229-5.401-.013-7.985-.962-1.711-.629-3.201-1.591-4.399-2.987-.214-.25-.488-.521-.887-.287-.391.23-.46.602-.329.979.219.626.421 1.278.762 1.838.857 1.405 2.107 2.424 3.483 3.298 2.643 1.681 5.597 2.246 8.66 2.377 4.648.201 9.183-.493 13.654-1.74 6.383-1.78 11.933-4.924 16.384-9.884 3.706-4.13 6.353-8.791 6.92-14.419.277-2.747-.018-5.438-1.304-7.944-1.395-2.715-3.613-4.734-6.265-6.125-3.862-2.025-8.03-3.204-12.332-3.204h-4.31c-5.21 0-10.247 1.493-15.143 3.274-3.706 1.349-7.34 2.941-10.868 4.703-7.683 3.839-14.838 8.468-20.715 14.833-2.928 3.171-5.407 6.67-6.833 10.79-.417 1.206-.813 2.499-1.111 3.746m27.839 36.013c-.333 4.459-2.354 8.074-5.657 11.002-1.858 1.646-3.989 2.818-6.471 3.23-.9.149-1.821.185-2.694-.188-1.245-.532-1.524-1.637-1.548-2.814-.037-1.876.62-3.572 1.521-5.186 1.176-2.104 2.9-3.708 4.741-5.206 2.9-2.361 6.046-4.359 9.268-6.245l.243-.1c.498 1.84.735 3.657.597 5.507zm25.158-19.379c-.235 1.424-.529 2.849-.945 4.229-1.438 4.777-3.285 9.406-5.282 13.973-.369.845-.906 1.616-1.373 2.417-.072.124-.179.231-.283.334-.578.571-1.126.541-1.418-.206-.34-.868-.549-1.797-.729-2.716-.121-.617-.092-1.265-.13-1.897.039-4.494 1.41-8.578 3.736-12.38.959-1.568 2.003-3.062 3.598-4.054.49-.305 1.04-.55 1.595-.706.85-.239 1.372.154 1.231 1.006zm17.164 21.868l6.169-7.203c.257 2.675-4.29 8.015-6.169 7.203zm19.703-4.847c-.436.25-.911.43-1.358.661-.409.212-.544-.002-.556-.354-.008-.239.027-.489.093-.721.833-2.938 2.366-5.446 4.647-7.486l.16-.082c1.085 3.035-.169 6.368-2.986 7.982z"
                   ></path>
@@ -215,7 +152,7 @@
                 <h4>Sass</h4>
                 <hr />
               </div>
-              <div class="skill col-md-6 col-lg-4">
+              <div className="skill col-md-6 col-lg-4">
                 <svg viewBox="0 0 128 128">
                   <path
                     fill="#383838"
@@ -229,7 +166,7 @@
                 <h4>JavaScript</h4>
                 <hr />
               </div>
-              <div class="skill col-md-6 col-lg-4">
+              <div className="skill col-md-6 col-lg-4">
                 <svg viewBox="0 0 128 128">
                   <path
                     fill="#383838"
@@ -239,7 +176,7 @@
                 <h4>Nodejs</h4>
                 <hr />
               </div>
-              <div class="skill col-md-6 col-lg-4">
+              <div className="skill col-md-6 col-lg-4">
                 <svg viewBox="0 0 128 128">
                   <path
                     fill="#383838"
@@ -249,11 +186,11 @@
                 <h4>React</h4>
                 <hr />
               </div>
-              <div class="skill col-md-6 col-lg-4">
+              <div className="skill col-md-6 col-lg-4">
                 <svg viewBox="0 0 128 128">
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="#383838"
                     d="M64.094 126.224c34.275-.052 62.021-27.933 62.021-62.325 0-33.833-27.618-61.697-60.613-62.286-34.652-.618-63.608 27.5-63.617 61.597-.01 35.079 27.612 63.064 62.209 63.014zm-.101-121.594c32.907-.011 59.126 26.725 59.116 60.28-.011 31.679-26.925 58.18-59.092 58.187-32.771.007-59.125-26.563-59.124-59.608.002-32.193 26.766-58.848 59.1-58.859zM39.157 35.896c.538 1.793-.968 2.417-2.569 2.542-1.685.13-3.369.257-5.325.406 6.456 19.234 12.815 38.183 19.325 57.573.464-.759.655-.973.739-1.223 3.574-10.682 7.168-21.357 10.651-32.069.318-.977.16-2.271-.188-3.275-1.843-5.32-4.051-10.524-5.667-15.908-1.105-3.686-2.571-6.071-6.928-5.644-.742.073-1.648-1.524-2.479-2.349 1.005-.6 2.003-1.704 3.017-1.719 8.872-.135 17.747-.135 26.618.008 1.018.017 2.016 1.15 3.021 1.765-.88.804-1.639 2.01-2.668 2.321-1.651.498-3.482.404-5.458.58 6.463 19.225 12.793 38.057 19.349 57.56 2.931-9.736 5.658-18.676 8.31-27.639 2.366-8.001.956-15.473-3.322-22.52-1.286-2.119-2.866-4.175-3.595-6.486-.828-2.629-1.516-5.622-1.077-8.259.745-4.469 4.174-6.688 8.814-7.113-25.392-23.566-65.294-15.13-79.997 10.475 5.66-.261 11.064-.604 16.472-.678 1.022-.013 2.717.851 2.957 1.652zM49.274 113.867c-.118.345-.125.729-.218 1.302 10.943 3.034 21.675 2.815 32.659-.886l-16.78-45.96c-5.37 15.611-10.52 30.575-15.661 45.544zM40.818 111.789l-25.281-69.35c-11.405 22.278-2.729 56.268 25.281 69.35zM117.246 67.227c.802-10.534-2.832-25.119-5.97-27.125-.35 3.875-.106 8.186-1.218 12.114-2.617 9.255-5.817 18.349-8.899 27.468-3.35 9.912-6.832 19.779-10.257 29.666 16.092-9.539 24.935-23.618 26.344-42.123z"
                   ></path>
@@ -261,7 +198,7 @@
                 <h4>WordPress</h4>
                 <hr />
               </div>
-              <div class="skill col-md-6 col-lg-4">
+              <div className="skill col-md-6 col-lg-4">
                 <svg viewBox="0 0 128 128">
                   <path
                     fill="#383838"
@@ -271,7 +208,7 @@
                 <h4>PHP</h4>
                 <hr />
               </div>
-              <div class="skill col-md-6 col-lg-4">
+              <div className="skill col-md-6 col-lg-4">
                 <svg viewBox="0 0 128 128">
                   <path
                     fill="#383838"
@@ -281,10 +218,10 @@
                 <h4>MySQL</h4>
                 <hr />
               </div>
-              <div class="skill col-sm-12">
+              <div className="skill col-sm-12">
                 <h1>Other Skills</h1>
                 <hr />
-                <ul class="other-skills">
+                <ul className="other-skills">
                   <li>Git/GitHub</li>
                   <li>Bootstrap</li>
                   <li>jQuery</li>
@@ -294,95 +231,33 @@
             </div>
           </div>
         </section>
-        <section class="contact" id="contact">
+        <section className="contact" id="contact">
           <div id="particles-js"></div>
-          <div class="container text-center">
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
+          <div className="container text-center">
+            <div className="row">
+              <div className="col-sm-12 col-md-6">
                 <h3>Connect with me:</h3>
                 <hr />
                 <p>Want to get in touch? Don't be shy!</p>
               </div>
-              <div class="social-container col-sm-12 col-md-6">
-                <a href="mailto:gregsthings@gmail.com"
-                  ><i class="fas fa-envelope"></i
-                ></a>
-                <a href="https://github.com/GregHughes" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
+              <div className="social-container col-sm-12 col-md-6">
+                <a href="mailto:gregsthings@gmail.com">
+                  <i className="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/GregHughes" target="_blank">
+                  <i className="fab fa-github"></i>
+                </a>
                 <a
                   href="https://www.linkedin.com/in/gregrichardhughes/"
                   target="_blank"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
+                >
+                  <i className="fab fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
           </div>
         </section>
-        <footer class="main-footer">
-          <div class="container">
-            <div class="row">
-              <div class="footer-content col-sm-12 col-lg-8">
-                <h3>About Greg</h3>
-                <p>
-                  I first started learning how to code when I was just a
-                  sophomore in High School after I discovered WordPress and the
-                  world of content management systems. When I was younger, I
-                  used to wonder how The Internet worked and how information was
-                  displayed on your screen almost like magic. That curiosity
-                  later fueled my ambition to teach myself the basics of HTML,
-                  CSS and WordPress.
-                </p>
-                <p>
-                  Now almost a decade later, after having received a Web Fundamentals
-                  Certificate and an AA degree in Digital Media: Web and Multimedia from Santa Rosa Junior College, my curiosity has pushed me
-                  to discover even more about modern web development. Some of the technology that I enjoy using and learning about currently are
-                  React, Next,js, Prisma, PostgreSQL and TypeScript.
-                </p>
-                <p></p>
-              </div>
-              <div class="col-sm-12 col-lg-4">
-                <h3>Info:</h3>
-                <div class="footer-contact">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p>Location: San Francisco Bay Area</p>
-                </div>
-                <div class="footer-contact">
-                  <i class="fas fa-envelope"></i>
-                  <p>Email: gregsthings@gmail.com</p>
-                </div>
-                <div class="footer-contact">
-                  <i class="fab fa-github"></i>
-                  <p>
-                    The source code for this website is available at
-                    <a
-                      href="https://github.com/GregHughes/gregscode"
-                      target="_blank"
-                      >GitHub.com</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-12 text-center">
-                <p id="copyright"></p>
-              </div>
-            </div>
-          </div>
-        </footer>
       </main>
-      <script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
-        integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP"
-        crossorigin="anonymous"
-      ></script>
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
-      <script src="js/site.js"></script>
-    </div>
-  </body>
-</html>
+    </>
+  );
+}
