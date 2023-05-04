@@ -1,6 +1,6 @@
 # gregscode.com
 
-Source code for my portfolio site [www.gregscode.com](www.gregscode.com).
+Source code for my portfolio site [www.gregscode.com](https://www.gregscode.com).
 
 This site was designed with mobile first in mind and is entirely responsive.
 
