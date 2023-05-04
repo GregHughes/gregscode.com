@@ -4,10 +4,17 @@ Source code for my portfolio site [www.gregscode.com](www.gregscode.com).
 
 This site was designed with mobile first in mind and is entirely responsive.
 
-## JavaScript libraries include:
+Static assets are generated using next.js build.
+
+## React Framework Used
+
+- Next.js
+
+## Third-party libraries include:
 
 - Typed.js
 - Smooth Scroll
+- jQuery
 
 ## CSS Framework
 
