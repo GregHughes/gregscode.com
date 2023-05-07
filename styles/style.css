@@ -54,6 +54,18 @@ navbar-nav {
     backface-visibility: hidden;
 }
 
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .65);
+}
+
 #resume-download-button {
     display: inline-block;
     margin-left: 8px;
@@ -115,16 +127,105 @@ navbar-nav {
     margin-bottom: 4vh;
 }
 
+/* .card {
+    transition: 0.20s ease-in-out;
+}
+
+.card:hover {
+    transform: perspective(0.1px) scale(1.05);
+
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
+
+} */
+
+.card-links {
+    max-height: 55px;
+}
+
+.card-link {
+    padding: 0.4rem;
+    color: #0d6efd;
+}
+
+.card-link:visited {
+    color: #0d6efd;
+}
+
+.card-link i {
+    padding-right: 0.4rem;
+}
+
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card>.list-group {
+    border-top: none;
+    flex-wrap: wrap;
+}
+
+.tech-icon:hover {
+    cursor: pointer;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.list-group-item i {
+    padding-right: 0.4em;
+}
+
+/* WIP Ribbon */
+
+.ribbon-container {
+    /* folded part */
+    --d: 10px;
+    /* ribbon color */
+    --c: #2b6d7d;
+    /* ribbon font-size */
+    --f: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+.ribbon-container::before {
+    content: attr(data-ribbon);
+    position: absolute;
+    font-size: var(--f);
+    top: 0;
+    right: 0;
+    transform: translate(29.29%, -100%) rotate(45deg);
+    color: #fff;
+    text-align: center;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    transform-origin: bottom left;
+    padding: 5px 35px calc(var(--d) + 5px);
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0 0) bottom/100% var(--d) no-repeat var(--c);
+    background-clip: padding-box;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - var(--d)) calc(100% - var(--d)), var(--d) calc(100% - var(--d)), 0 100%);
+    -webkit-mask: linear-gradient(135deg, transparent calc(50% - var(--d) * 0.707), #fff 0) bottom left,
+        linear-gradient(-135deg, transparent calc(50% - var(--d) * 0.707), #fff 0)bottom right;
+    mask: linear-gradient(135deg, transparent calc(50% - var(--d) * 0.707), #fff 0) bottom left,
+        linear-gradient(-135deg, transparent calc(50% - var(--d) * 0.707), #fff 0)bottom right;
+    -webkit-mask-size: 300vmax 300vmax;
+    mask-size: 300vmax 300vmax;
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+}
+
 /* Skills CSS */
-
-.skills {
-    background-color: #dfdfdf;
-    padding: 4%;
-}
-
-.skill {
-    padding: 100px;
-}
 
 .other-skills {
     list-style: none;
@@ -176,6 +277,7 @@ navbar-nav {
 
 .footer-contact i {
     font-size: 1.4em;
+    padding: 0 0.4em;
 }
 
 .footer-contact p {
@@ -185,18 +287,6 @@ navbar-nav {
 
 .footer-contact a {
     text-decoration: underline;
-}
-
-/* Particles.js CSS */
-
-#particles-js {
-    width: 100%;
-    height: 100%;
-}
-
-.particles-js-canvas-el {
-    position: absolute;
-    margin: -4%;
 }
 
 /* Typed.js CSS */
@@ -233,7 +323,7 @@ navbar-nav {
 }
 
 .code-grid div {
-    height: 402px;
+    height: 430px;
     width: 524px;
     /*Preserve 3D style for children(pseudo elements)*/
     -webkit-transform-style: preserve-3d;
@@ -293,7 +383,7 @@ navbar-nav {
     background-position: bottom center;
 }
 
-/*Shadow time - sadly all pseudo elements are used so we will have to add an HTML element in each LI*/
+/*all pseudo elements are used so we will have to add an HTML element in each LI*/
 
 .s {
     position: absolute;

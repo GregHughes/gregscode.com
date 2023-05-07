@@ -36,7 +36,7 @@ const Footer = () => {
               <div className="footer-contact">
                 <i className="fab fa-github"></i>
                 <p>
-                  The source code for this website is available at
+                  The source code for this website is available at{" "}
                   <a
                     href="https://github.com/GregHughes/gregscode"
                     target="_blank"
