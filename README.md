@@ -13,8 +13,6 @@ Static assets are generated using next.js build.
 ## Third-party libraries include:
 
 - Typed.js
-- Smooth Scroll
-- jQuery
 
 ## CSS Framework
 
