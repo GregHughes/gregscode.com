@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const ProjectList = ({ projectContent }) => {
   const techIconClass = {
     HTML: "fab fa-html5",
