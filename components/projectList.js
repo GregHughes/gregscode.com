@@ -16,7 +16,7 @@ const ProjectList = ({ projectContent }) => {
         <div className="project col-sm-12 col-md-6 col-lg-4" key={i}>
           <div className="card h-100">
             {project.inProgress ? (
-              <a href={project.url}>
+              <a href={project.url} target="_blank">
                 <div
                   className="ribbon-container"
                   data-ribbon="Work In Progress"
@@ -29,7 +29,7 @@ const ProjectList = ({ projectContent }) => {
                 </div>
               </a>
             ) : (
-              <a href={project.url}>
+              <a href={project.url} target="_blank">
                 <img
                   src={project.image}
                   alt={"Screenshot of " + project.name}
@@ -56,20 +56,30 @@ const ProjectList = ({ projectContent }) => {
                       techIconClass["OTHER"]
                     }
                   ></i>
-                  {/* {techIconClass[tech.toUpperCase()] ? "" : tech} */ tech}
+                  {tech}
                 </li>
               ))}
             </ul>
             <div className="card-body card-links">
-              {project.url != "" && (
+              {project.url != "" ? (
                 <a href={project.url} target="_blank" className="card-link">
+                  <i className="fas fa-server"></i>
+                  Live
+                </a>
+              ) : (
+                <a className="card-link disabled-link">
                   <i className="fas fa-server"></i>
                   Live
                 </a>
               )}
 
-              {project.repo != "" && (
+              {project.repo != "" ? (
                 <a href={project.repo} target="_blank" className="card-link">
+                  <i className="fab fa-github"></i>
+                  Source
+                </a>
+              ) : (
+                <a className="card-link disabled-link">
                   <i className="fab fa-github"></i>
                   Source
                 </a>

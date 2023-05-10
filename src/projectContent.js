@@ -7,7 +7,7 @@ const projectContent = [
     webStack: ["HTML", "CSS", "JavaScript", "Chart.js"],
     description:
       "An easy to use inflation calculator that uses the Consumer Price Index from the U.S. Bureau of Labor Statistics to calculate the rate of inflation between two years.",
-    inProgress: false,
+    inProgress: true,
   },
   {
     name: "Worra's Tale",

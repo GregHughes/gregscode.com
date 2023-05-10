@@ -41,6 +41,12 @@ a:visited {
     text-decoration: none;
 }
 
+a.disabled-link {
+    color: gray;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
 /* Main Nav CSS */
 
 nav {
@@ -69,6 +75,10 @@ navbar-nav {
 #resume-download-button {
     display: inline-block;
     margin-left: 8px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
 }
 
 /* Header CSS */
@@ -127,12 +137,12 @@ navbar-nav {
     margin-bottom: 4vh;
 }
 
-/* .card {
+.card {
     transition: 0.20s ease-in-out;
 }
 
 .card:hover {
-    transform: perspective(0.1px) scale(1.05);
+    transform: scale(1.048);
 
     box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -145,7 +155,7 @@ navbar-nav {
     -webkit-font-smoothing: subpixel-antialiased;
     backface-visibility: hidden;
 
-} */
+}
 
 .card-links {
     max-height: 55px;
@@ -195,11 +205,12 @@ navbar-nav {
     --c: #2b6d7d;
     /* ribbon font-size */
     --f: 16px;
-    position: relative;
+    /* position: relative; */
     display: inline-block;
+    width: 100%;
 }
 
-.ribbon-container::before {
+.ribbon-container::after {
     content: attr(data-ribbon);
     position: absolute;
     font-size: var(--f);
@@ -226,6 +237,10 @@ navbar-nav {
 }
 
 /* Skills CSS */
+
+.skill {
+    padding: 4%
+}
 
 .other-skills {
     list-style: none;

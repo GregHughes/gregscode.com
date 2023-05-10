@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Header from "@/components/header";
 import Projects from "@/components/projects";
+import Skills from "@/components/skills";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -48,46 +50,8 @@ export default function Home() {
           </div>
         </section>
         <Projects />
-        <section className="skills" id="skills">
-          <div className="container">
-            <div className="row text-center">
-              <h1>Other Skills</h1>
-              <hr />
-              <ul className="other-skills">
-                <li>Git/GitHub</li>
-                <li>Bootstrap</li>
-                <li>jQuery</li>
-                <li>GraphQL</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section className="contact" id="contact">
-          <div id="particles-js"></div>
-          <div className="container text-center">
-            <div className="row">
-              <div className="col-sm-12 col-md-6">
-                <h3>Connect with me:</h3>
-                <hr />
-                <p>Want to get in touch? Don't be shy!</p>
-              </div>
-              <div className="social-container col-sm-12 col-md-6">
-                <a href="mailto:gregsthings@gmail.com">
-                  <i className="fas fa-envelope"></i>
-                </a>
-                <a href="https://github.com/GregHughes" target="_blank">
-                  <i className="fab fa-github"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/gregrichardhughes/"
-                  target="_blank"
-                >
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Skills />
+        <Contact />
       </main>
     </>
   );

@@ -12,7 +12,7 @@ const Footer = () => {
                 content management systems. When I was younger, I used to wonder
                 how The Internet worked and how information was displayed on
                 your screen almost like magic. That curiosity later fueled my
-                ambition to teach myself the basics of HTML, CSS and WordPress.
+                ambition to teach myself HTML, CSS and JavaScript.
               </p>
               <p>
                 Now almost a decade later, after having received a Web
