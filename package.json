@@ -1,11 +1,12 @@
 {
   "name": "gregscode",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "analyze": "cross-env ANALYZE=true next build"
+    "analyze": "cross-env ANALYZE=true next build",
+    "build": "next build && npm run prep",
+    "prep": "cp $INIT_CWD/{CNAME,.nojekyll} $INIT_CWD/docs"
   },
   "dependencies": {
     "next": "13.3.4",
