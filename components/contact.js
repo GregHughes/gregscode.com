@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="contact" id="contact">
+    <section className="contact" data-target="contact">
       <div id="particles-js"></div>
       <div className="container text-center">
         <div className="row">

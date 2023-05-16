@@ -4,7 +4,7 @@ import ProjectList from "./projectList";
 const Projects = () => {
   return (
     <>
-      <section className="projects" id="projects">
+      <section className="projects" data-target="projects">
         <div className="container">
           <div className="row text-center">
             <div className="col-sm-12">

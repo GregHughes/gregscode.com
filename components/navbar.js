@@ -1,4 +1,15 @@
 const Navbar = () => {
+  const scrollTo = (e) => {
+    e.preventDefault();
+    const el = document.querySelector(
+      "[data-target=" + e.target.dataset.scroll + "]"
+    );
+    el.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top">
@@ -8,8 +19,8 @@ const Navbar = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -19,22 +30,42 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#hello">
+              <a
+                className="nav-link"
+                href=""
+                data-scroll="hello"
+                onClick={scrollTo}
+              >
                 Hello <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#projects">
+              <a
+                className="nav-link"
+                href=""
+                data-scroll="projects"
+                onClick={scrollTo}
+              >
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#skills">
+              <a
+                className="nav-link"
+                href=""
+                data-scroll="skills"
+                onClick={scrollTo}
+              >
                 Skills
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <a
+                className="nav-link"
+                href=""
+                data-scroll="contact"
+                onClick={scrollTo}
+              >
                 Contact
               </a>
             </li>

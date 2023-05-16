@@ -17,7 +17,7 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <main role="main" id="hello">
+      <main role="main" data-target="hello">
         <section className="summary">
           <div className="container">
             <div className="row justify-content-between">
