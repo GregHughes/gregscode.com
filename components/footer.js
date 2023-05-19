@@ -19,8 +19,9 @@ const Footer = () => {
                 Fundamentals Certificate and an AA degree in Digital Media: Web
                 and Multimedia from Santa Rosa Junior College, my curiosity has
                 pushed me to discover even more about modern web development.
-                Some of the technology that I enjoy using and learning about
-                currently are React, Next,js, Prisma, PostgreSQL and TypeScript.
+                Some of the technologies that I'm currently enjoying and
+                learning about are Next.js, Prisma w/ PostgreSQL, and machine
+                learning with Python and the NLTK package.
               </p>
             </div>
             <div className="col-sm-12 col-lg-4">

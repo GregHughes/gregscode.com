@@ -2,6 +2,7 @@ const ProjectList = ({ projectContent }) => {
   const techIconClass = {
     HTML: "devicon-html5-plain",
     CSS: "devicon-css3-plain",
+    TAILWIND: "devicon-tailwindcss-plain",
     BOOTSTRAP: "devicon-bootstrap-plain",
     JAVASCRIPT: "devicon-javascript-plain",
     TYPESCRIPT: "devicon-typescript-plain",
@@ -27,7 +28,7 @@ const ProjectList = ({ projectContent }) => {
                   <a href={project.repo} target="_blank">
                     <div
                       className="ribbon-container"
-                      data-ribbon-content="This Website!"
+                      data-ribbon-content="This Website"
                       data-ribbon-type="portfolio"
                     >
                       <img
@@ -95,7 +96,10 @@ const ProjectList = ({ projectContent }) => {
                   Live
                 </a>
               ) : (
-                <a className="card-link disabled-link">
+                <a
+                  className="card-link disabled-link"
+                  title="Site Not Available"
+                >
                   <i className="fas fa-server"></i>
                   Live
                 </a>
@@ -107,7 +111,10 @@ const ProjectList = ({ projectContent }) => {
                   Source
                 </a>
               ) : (
-                <a className="card-link disabled-link">
+                <a
+                  className="card-link disabled-link"
+                  title="Source Not Available"
+                >
                   <i className="fab fa-github"></i>
                   Source
                 </a>

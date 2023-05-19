@@ -136,25 +136,46 @@ navbar-nav {
 
 .project {
   margin-bottom: 4vh;
-  max-height: 550px;
+  max-height: 575px;
 }
 
 .card {
+  position: relative;
   transition: 0.2s ease-in-out;
+}
+
+/* card shadow */
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--bs-border-radius);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  -webkit-font-smoothing: subpixel-antialiased;
+  backface-visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  z-index: -1;
 }
 
 @media (hover: hover) {
   .card:hover {
     transform: scale(1.048);
-
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-      0 100px 80px rgba(0, 0, 0, 0.12);
-
-    -webkit-font-smoothing: subpixel-antialiased;
-    backface-visibility: hidden;
   }
+
+  .card:hover::after {
+    opacity: 1;
+  }
+}
+
+.card-img-top {
+  border: solid black 0.1rem;
 }
 
 .card-links {
@@ -178,7 +199,7 @@ navbar-nav {
   font-size: 1rem;
 }
 
-.card > .list-group {
+.card>.list-group {
   border-top: none;
   flex-wrap: wrap;
 }
@@ -211,6 +232,7 @@ navbar-nav {
   /* ribbon color */
   --c: #2b6d7d;
 }
+
 .ribbon-container[data-ribbon-type="portfolio"] {
   /* ribbon color */
   --c: #7d352b;
@@ -229,33 +251,22 @@ navbar-nav {
   border-bottom: 0;
   transform-origin: bottom left;
   padding: 5px 35px calc(var(--d) + 5px);
-  background: linear-gradient(rgba(0, 0, 0, 0.5) 0 0) bottom/100% var(--d)
-    no-repeat var(--c);
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0 0) bottom/100% var(--d) no-repeat var(--c);
   background-clip: padding-box;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    calc(100% - var(--d)) calc(100% - var(--d)),
-    var(--d) calc(100% - var(--d)),
-    0 100%
-  );
-  -webkit-mask: linear-gradient(
-        135deg,
-        transparent calc(50% - var(--d) * 0.707),
-        #fff 0
-      )
-      bottom left,
-    linear-gradient(-135deg, transparent calc(50% - var(--d) * 0.707), #fff 0)
-      bottom right;
-  mask: linear-gradient(
-        135deg,
-        transparent calc(50% - var(--d) * 0.707),
-        #fff 0
-      )
-      bottom left,
-    linear-gradient(-135deg, transparent calc(50% - var(--d) * 0.707), #fff 0)
-      bottom right;
+  clip-path: polygon(0 0,
+      100% 0,
+      100% 100%,
+      calc(100% - var(--d)) calc(100% - var(--d)),
+      var(--d) calc(100% - var(--d)),
+      0 100%);
+  -webkit-mask: linear-gradient(135deg,
+      transparent calc(50% - var(--d) * 0.707),
+      #fff 0) bottom left,
+    linear-gradient(-135deg, transparent calc(50% - var(--d) * 0.707), #fff 0) bottom right;
+  mask: linear-gradient(135deg,
+      transparent calc(50% - var(--d) * 0.707),
+      #fff 0) bottom left,
+    linear-gradient(-135deg, transparent calc(50% - var(--d) * 0.707), #fff 0) bottom right;
   -webkit-mask-size: 300vmax 300vmax;
   mask-size: 300vmax 300vmax;
   -webkit-mask-composite: destination-in;

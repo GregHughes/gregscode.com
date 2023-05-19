@@ -16,7 +16,7 @@ const Header = () => {
         </div>
         <div className="main-header-content">
           <h2>Greg Hughes - Full Stack Engineer</h2>
-          <p>Lover of all things JavaScript and React &#128640;</p>
+          <p>Check out my projects and more below &#128640;</p>
         </div>
         <a href="" onClick={scrollTo}>
           <i className="fas fa-chevron-down fa-3x swing"></i>

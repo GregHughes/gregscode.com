@@ -38,8 +38,8 @@ export default function Home() {
                   is my natural curiosity to learn as much as I can, and put my
                   skills to the test in order to achieve the best results
                   possible. I strive to become a better web developer every day
-                  that I can by keeping up with best practices and following new
-                  modern architectures and paradigms.
+                  that I can by keeping up with best practices as well as
+                  following new modern frameworks and coding paradigms.
                 </p>
                 <p>
                   Want to work together? I'm always open to starting new

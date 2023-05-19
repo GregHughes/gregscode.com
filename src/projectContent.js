@@ -1,12 +1,11 @@
 const projectContent = [
   {
-    name: "GregsCode.com",
+    name: "My Portfolio",
     url: "",
     repo: "https://github.com/GregHughes/gregscode.com",
     image: "/images/portfolio.png",
     webStack: ["React", "Bootstrap", "Next.js"],
-    description:
-      "My custom web development portfolio, the current website you're on.",
+    description: "You're on it now!",
     inProgress: false,
     isPortfolio: true,
   },
@@ -18,6 +17,17 @@ const projectContent = [
     webStack: ["HTML", "CSS", "JavaScript", "Chart.js"],
     description:
       "An easy to use inflation calculator that uses the Consumer Price Index from the U.S. Bureau of Labor Statistics to calculate the rate of inflation between two years.",
+    inProgress: true,
+    isPortfolio: false,
+  },
+  {
+    name: "Meal Planner",
+    url: "",
+    repo: "https://github.com/GregHughes/meal-planner",
+    image: "/images/meal-planner.png",
+    webStack: ["React", "Tailwind", "TypeScript", "Next.js"],
+    description:
+      "A full stack application that curates customized meal plans based off user-provided dietary preferences. This is very early in development! Only the repo is available at the moment.",
     inProgress: true,
     isPortfolio: false,
   },
@@ -39,7 +49,7 @@ const projectContent = [
     image: "/images/phlm.png",
     webStack: ["HTML", "CSS", "JavaScript", "WordPress"],
     description:
-      "Website for the Petaluma Historical Library & Museum built on top of WordPress. A custom theme with custom post types was created for this project. Source code not available.",
+      "Website for the Petaluma Historical Library & Museum built on top of WordPress. A custom theme with custom post types was created for this project. Source code not available as it belongs to the library.",
     inProgress: false,
     isPortfolio: false,
   },
@@ -50,7 +60,7 @@ const projectContent = [
     image: "/images/d3.png",
     webStack: ["HTML", "CSS", "jQuery", "D3.js"],
     description:
-      "A visualization of 2018 Octoverse data using the D3.js library.",
+      "An interactive visualization of 2018 Octoverse data using the D3.js library.",
     inProgress: false,
     isPortfolio: false,
   },
