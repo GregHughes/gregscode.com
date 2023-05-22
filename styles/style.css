@@ -33,20 +33,6 @@ button {
   overflow-x: hidden;
 }
 
-/* Links CSS */
-
-a:link,
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
-a.disabled-link {
-  color: gray;
-  text-decoration: none;
-  cursor: not-allowed;
-}
-
 /* Main Nav CSS */
 
 nav {
@@ -185,6 +171,17 @@ navbar-nav {
 a.card-link {
   padding: 0.4rem;
   color: #0d6efd;
+  text-decoration: none;
+}
+
+a.card-link:visited {
+  text-decoration: none;
+}
+
+a.card-link.disabled-link {
+  color: gray;
+  text-decoration: none;
+  cursor: not-allowed;
 }
 
 .card-link i {

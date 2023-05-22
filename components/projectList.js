@@ -42,7 +42,10 @@ const ProjectList = ({ projectContent }) => {
                 );
               } else if (project.inProgress) {
                 return (
-                  <a href={project.url || project.repo} target="_blank">
+                  <a
+                    href={project.url != "" ? project.url : project.repo}
+                    target="_blank"
+                  >
                     <div
                       className="ribbon-container"
                       data-ribbon-content="Work In Progress"
@@ -58,7 +61,10 @@ const ProjectList = ({ projectContent }) => {
                 );
               } else {
                 return (
-                  <a href={project.url || project.repo} target="_blank">
+                  <a
+                    href={project.url != "" ? project.url : project.repo}
+                    target="_blank"
+                  >
                     <img
                       src={project.image}
                       alt={"Screenshot of " + project.name}
