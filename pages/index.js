@@ -32,8 +32,8 @@ export default function Home() {
                 <h1>Hello, World!</h1>
                 <hr />
                 <p>
-                  My name is Greg Hughes and I am full stack web developer. I am
-                  passionate about solving real world problems with fast and
+                  My name is Greg Hughes and I am a full stack web developer. I
+                  am passionate about solving real world problems with fast and
                   intuitive web applications as a solution. What keeps me driven
                   is my natural curiosity to learn as much as I can, and put my
                   skills to the test in order to achieve the best results

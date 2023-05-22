@@ -12,7 +12,7 @@ const projectContent = [
   {
     name: "Inflation Calculator",
     url: "https://greghughes.github.io/InflationCalculator/",
-    repo: "https://github.com/GregHughes/InflationCalculator/tree/main",
+    repo: "https://github.com/GregHughes/InflationCalculator",
     image: "/images/inflation-calc.png",
     webStack: ["HTML", "CSS", "JavaScript", "Chart.js"],
     description:
@@ -25,7 +25,7 @@ const projectContent = [
     url: "",
     repo: "https://github.com/GregHughes/meal-planner",
     image: "/images/meal-planner.png",
-    webStack: ["React", "Tailwind", "TypeScript", "Next.js"],
+    webStack: ["React", "Tailwind", "TypeScript", "Next.js", "PostgreSQL"],
     description:
       "A full stack application that curates customized meal plans based off user-provided dietary preferences. This is very early in development! Only the repo is available at the moment.",
     inProgress: true,

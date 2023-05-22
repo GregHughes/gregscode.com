@@ -182,12 +182,8 @@ navbar-nav {
   max-height: 55px;
 }
 
-.card-link {
+a.card-link {
   padding: 0.4rem;
-  color: #0d6efd;
-}
-
-.card-link:visited {
   color: #0d6efd;
 }
 
